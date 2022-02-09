@@ -20,3 +20,13 @@ class DeepFakeSynthesizer:
             transforms.ToTensor(),
             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))  # Normalize image
         ])
+        face_tensor = transform(face_image).unsqueeze(0).to(self.device)
+
+        # Generate DeepFake using GAN generator
+        with torch.no_grad():
+            generated_image = self.generator(face_tensor).squeeze(0).cpu()
+
+        # Convert generated tensor back to PIL image
+        generated_image = transforms.ToPILImage()(generated_image)
+
+        return generated_image
