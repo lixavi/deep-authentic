@@ -13,13 +13,11 @@ class DeepFakeSynthesizer:
         generator.eval()
         return generator
 
-
-
-        # Generate DeepFake using GAN generator
-        with torch.no_grad():
-            generated_image = self.generator(face_tensor).squeeze(0).cpu()
-
-        # Convert generated tensor back to PIL image
-        generated_image = transforms.ToPILImage()(generated_image)
-
-        return generated_image
+    def generate_deepfake(self, face_image):
+        # Preprocess input image
+        transform = transforms.Compose([
+            transforms.Resize((128, 128)),  # Resize image to input size of GAN
+            transforms.ToTensor(),
+            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))  # Normalize image
+        ])
+        face_tensor = transform(face_image).unsqueeze(0).to(self.device)
