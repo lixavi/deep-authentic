@@ -1,0 +1,16 @@
+.flex-all-center{
+    height: 12vh;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+}
+height{
+    margin: 26px 0px;
+    padding-top: 25px;
+}
+.text-center{
+    text-align: center;
+}

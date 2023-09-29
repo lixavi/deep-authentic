@@ -1,0 +1,18 @@
+@media screen and (max-width:1000px) {
+    .awab{
+        height: 23vh;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav ul{
+     justify-content: center;
+    }
+    .searchbar input{
+        margin: 13px 2px 16px 50px;
+        padding: 2px -33px 0px 0px;
+    }
+}

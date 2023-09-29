@@ -1,0 +1,17 @@
+.awab{
+    display: flex;
+    flex-direction: column;
+    padding-top: 124px;
+}
+.awab .form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+body{
+    background-color: blueviolet;
+}
+#address{
+    padding-left: 103px;
+}

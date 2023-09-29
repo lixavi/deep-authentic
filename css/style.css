@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    
+    background-color: blue;
+    border: 2px solid red;
+
+}
+li{
+    list-style: none;
+    margin-top: 8px;
+    margin-right: 15px;
+    padding: 0px 29px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    
+}
+nav ul li a:hover{
+   color: rgb(19, 2, 2);
+   /* font-weight:bold; */
+   
+    
+}
+nav{
+    display: flex;
+    /* justify-content: flex-start; */
+    
+}
+.logo{
+    display: flex;
+    
+ 
+}
+.logo img{
+  
+    padding: 10px 19px;
+}
+
+ul{
+    display: flex;
+    justify-content:flex-start;
+  align-items: center;
+ 
+    
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.btn{
+    border: 3px solid white;
+    background-color: blue;
+    color: white;
+ 
+    
+    
+}
+.searchbar button{
+    font-family: 'Baloo 2', cursive;
+}
+.searchbar input{
+    width: 30vw;
+    height: 23px;
+    border-radius: 5px;
+    /* margin: 0 16px 0 56px;
+    padding: 0px 12px 0px 20px; */
+}
+.container{
+    min-height: calc(100vh - 40px - 12vh);
+}
+.awab{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 30vh;
+}
+.card{
+   
+    
+    /* flex-direction: column; */
+    /* background-color: yellowgreen; */
+    max-width: 91vw;
+    margin: 60px auto;
+}
+.card h2{
+    font-family: 'Baloo 2', cursive;
+}
+.card-items{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+.cards{
+    display: flex;
+    overflow: scroll;
+    
+}
